@@ -1,0 +1,29 @@
+[core]
+	editor = vim
+	excludesfile = ~/.gitignore
+[alias]
+	ll = log --oneline --graph --all --decorate
+	st = status -s
+	sta = status
+	ci = commit
+	cia = commit --amend
+	cian = commit --amend --no-edit
+	rs = reset
+	ad = add
+	co = checkout
+	cob = checkout -b
+	br = branch
+	pushu = push -u
+	cp = cherry-pick
+	rb = rebase
+	rbi = rebase --interactive
+	me = merge
+	di = diff
+	dic = diff --cached
+	wdi = diff --word-diff --color-words
+	wdic = diff --cached --word-diff --color-words
+	cutbr = "!git branch --merged | egrep -v '(^\\*|master|dev)' | xargs git branch -d"
+[user]
+	name = Jonh Doe
+	email = john.doe@example.com
+
