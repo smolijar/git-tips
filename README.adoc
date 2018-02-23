@@ -101,6 +101,10 @@ dic = diff --cached
 wdi = diff --word-diff --color-words
 wdic = diff --cached --word-diff --color-words
 ```
+.Remove all merged branches (link:https://stackoverflow.com/a/6127884/4425335[credit])
+```
+cutbr = "!git branch --merged | egrep -v '(^\\*|master|dev)' | xargs git branch -d"
+```
 
 === Adding aliases
 
