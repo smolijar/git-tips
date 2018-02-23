@@ -62,23 +62,28 @@ NOTE: All config you set is stored in `~/.gitconfig`. You can edit it there as w
 
 == Aliases
 
-.List all commits
+==== Log
+Full colorful tree, all refs.
 ```
 ll = log --oneline --graph --all --decorate
 ```
 
-.Short (`-s`) removes help
+==== Status
+Short (`-s`) removes help and provies just bare summary. Standard provides brief help.
 ```
 st = status -s
 sta = status
 ```
 
+==== Commits
+`cian` extremely useful for quick patches hook fallouts etc.
 ```
 ci = commit
 cia = commit --amend
 cian = commit --amend --no-edit
 ```
 
+==== Index/remote
 ```
 rs = reset
 ad = add
@@ -88,6 +93,7 @@ br = branch
 pushu = push -u
 ```
 
+==== Rebasing
 ```
 cp = cherry-pick
 rb = rebase
@@ -95,13 +101,16 @@ rbi = rebase --interactive
 me = merge
 ```
 
+==== Diffing
 ```
 di = diff
 dic = diff --cached
 wdi = diff --word-diff --color-words
 wdic = diff --cached --word-diff --color-words
 ```
-.Remove all merged branches (link:https://stackoverflow.com/a/6127884/4425335[credit])
+
+==== Branch cleanup
+Remove all merged branches (link:https://stackoverflow.com/a/6127884/4425335[credit]), except for _standard_ ones.
 ```
 cutbr = "!git branch --merged | egrep -v '(^\\*|master|dev)' | xargs git branch -d"
 ```
