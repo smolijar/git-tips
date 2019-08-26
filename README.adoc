@@ -47,7 +47,7 @@ Else use other CLI editor.
 
 image:http://i0.kym-cdn.com/photos/images/original/001/305/222/ae7.gif[]
 
-It might sound like a brand new excellent idea to you, after discovering GPU acc terminal emulators (like [kitty](https://github.com/kovidgoyal/kitty)) and inline graphical diffs. Same advice applies. But give it a shot you stubborn rabbit.
+It might sound like a brand new excellent idea to you, after discovering GPU acc terminal emulators (like link:https://github.com/kovidgoyal/kitty[kitty]) and inline graphical diffs. Same advice applies. But give it a shot you stubborn rabbit.
 
 == Excludes file
 
