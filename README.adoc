@@ -3,7 +3,11 @@
 
 Tips for forgetful I, so I know all the things I need to, when forced to set up git from scratch in new env.
 
-Sit back and let my guide myself.
+```
+curl https://raw.githubusercontent.com/grissius/git-tips/master/.gitconfig > ~/.gitconfig && echo "Change your name in ~/.gitconfig"
+```
+
+Sit back and let me guide myself.
 
 == Who am I?
 ```sh
@@ -43,6 +47,8 @@ Else use other CLI editor.
 
 image:http://i0.kym-cdn.com/photos/images/original/001/305/222/ae7.gif[]
 
+It might sound like a brand new excellent idea to you, after discovering GPU acc terminal emulators (like [kitty](https://github.com/kovidgoyal/kitty)) and inline graphical diffs. Same advice applies. But give it a shot you stubborn rabbit.
+
 == Excludes file
 
 . Don't dodge your IDE temp files while staging changes.
@@ -65,8 +71,10 @@ NOTE: All config you set is stored in `~/.gitconfig`. You can edit it there as w
 ==== Log
 Full colorful tree, all refs.
 ```
-ll = log --oneline --graph --all --decorate
+ll2 = log --oneline --graph --all --decorate
+ll = log --graph --all --decorate --format=format:'%C(bold cyan)%h%C(reset) %C(dim cyan)(%ar)%C(reset)%C(auto)%d%C(reset) %C(white)%s%C(reset) %C(dim white)(%ae) %C(reset)'
 ```
+`ll2` standard, `ll` custom with dates and authors
 
 ==== Status
 Short (`-s`) removes help and provies just bare summary. Standard provides brief help.

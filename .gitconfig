@@ -2,7 +2,8 @@
 	editor = vim
 	excludesfile = ~/.gitignore
 [alias]
-	ll = log --oneline --graph --all --decorate
+	ll2 = log --oneline --graph --all --decorate
+	ll = log --graph --all --decorate --format=format:'%C(bold cyan)%h%C(reset) %C(dim cyan)(%ar)%C(reset)%C(auto)%d%C(reset) %C(white)%s%C(reset) %C(dim white)(%ae) %C(reset)'
 	st = status -s
 	sta = status
 	ci = commit
@@ -25,5 +26,5 @@
 	cutbr = "!git branch --merged | egrep -v '(^\\*|master|dev)' | xargs git branch -d"
 [user]
 	name = Jonh Doe
-	email = john.doe@example.com
-
+[push]
+	default = current
