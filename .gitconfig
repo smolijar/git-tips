@@ -23,8 +23,9 @@
 	dic = diff --cached
 	wdi = diff --word-diff --color-words
 	wdic = diff --cached --word-diff --color-words
+	backup = "!git branch backup/$(git rev-parse --abbrev-ref HEAD)"
 	cutbr = "!git branch --merged | egrep -v '(^\\*|master|dev)' | xargs git branch -d"
 [user]
-	name = Jonh Doe
+	name = Jaroslav Šmolík
 [push]
 	default = current
